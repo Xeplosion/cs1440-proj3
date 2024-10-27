@@ -2,12 +2,6 @@
 
 Phase 0: Requirements Analysis (tag name `analyzed`)
 ----------------------------------------------------
-*(20% of your effort)*
-
-**Important - do not change the starter code in this phase.**  Feel free to write prototype files and experiment in the REPL, but it's too early to work on the starter code now.
-
-
-Deliver:
 
 Working to create a program to summarize data from the Bureau of the Division of Labor Statistics. The data to be processed is in .csv files.
 The program needs to be reasonably fast. To test its speed you can use the benchmark tool as time is relative to your system.
@@ -38,6 +32,32 @@ Deliver:
 *   [ ] **Tag** the last commit in this phase `designed` and push it to GitLab.
     *   *Grace Points: if this tag is pushed before 11:59 PM on the Monday before the due date, you will receive up to 5 points back*
 
+record_matches_fips(record, areas):
+    for areas
+        if fip index of record equals areas index
+            return True
+    return False
+
+record_is_all_industries(record):
+    extract industry and ownership codes from record
+    check if they match the code that indicates all industries or all ownership types
+
+record_is_software_industry(record):
+    extract industry type code and return True if software company
+
+get_fips(record):
+    returns the index of the QCEW containing the FIP code
+
+get_estabs(record):
+    returns the index of the QCEW containing the establishment counts
+
+get emplvl(record):
+    returns the index of the QCEW containing the employment levels
+
+get_wages(record):
+    get the index for all 4 quarters wages
+    returns the sum of these 4 numbers
+    
 
 Phase 2: Implementation (tag name `implemented`)
 ------------------------------------------------
