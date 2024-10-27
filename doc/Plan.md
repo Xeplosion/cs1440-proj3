@@ -9,18 +9,6 @@ Phase 0: Requirements Analysis (tag name `analyzed`)
 
 Deliver:
 
-*   [ ] Re-write the instructions in your own words.
-    *   If you don't do this, you won't know what you're supposed to do!
-    *   Don't leave out details!
-*   [ ] Explain the problem this program aims to solve.
-    *   Describe what a *good* solution looks like.
-    *   List what you already know how to do.
-    *   Point out any challenges that you can foresee.
-*   [ ] List all of the data that is used by the program, making note of where it comes from.
-*   [ ] Explain what form the program's output will take.
-*   [ ] **Tag** the last commit in this phase `analyzed` and push it to GitLab.
-    *   *Grace Points: if this tag is pushed before 11:59 PM on the Monday before the due date, you will receive up to 5 points back*
-
 Working to create a program to summarize data from the Bureau of the Division of Labor Statistics. The data to be processed is in .csv files.
 The program needs to be reasonably fast. To test its speed you can use the benchmark tool as time is relative to your system.
 The solution should EXACTLY match the output.txt files in each data directory. The report should include correct factual data.
