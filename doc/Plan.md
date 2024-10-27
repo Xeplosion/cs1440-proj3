@@ -21,6 +21,15 @@ Deliver:
 *   [ ] **Tag** the last commit in this phase `analyzed` and push it to GitLab.
     *   *Grace Points: if this tag is pushed before 11:59 PM on the Monday before the due date, you will receive up to 5 points back*
 
+Working to create a program to summarize data from the Bureau of the Division of Labor Statistics. The data to be processed is in .csv files.
+The program needs to be reasonably fast. To test its speed you can use the benchmark tool as time is relative to your system.
+The solution should EXACTLY match the output.txt files in each data directory. The report should include correct factual data.
+I already know how to process data from .csv files using Python.
+I think that processing all of the data in a fast way might be somewhat challenging.
+The data used by this program comes from the Bureau of the Division of Labor Statistics. There are several data sets of various sizes in the
+form of .csv files.
+The programs output should be printed in the console using STDOUT. The output should match the provided examples exactly.
+
 
 Phase 1: Design (tag name `designed`)
 -------------------------------------
