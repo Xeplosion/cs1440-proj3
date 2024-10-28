@@ -94,21 +94,16 @@ Added final touches to documentation.
 Phase 5: Maintenance
 --------------------
 
-Spend a few minutes writing thoughtful answers to these questions.  They are meant to make you think about the long-term consequences of choices you made in this project.
+I think for the most part my code was well written and easy to understand.
+However, I could have probably done a better job commenting the big_data.py file and the documentation is somewhat lacking and confusing.
 
-Deliver:
+If a bug was reported in a few months I think I would need around an hour or so to fix it.
+The first 45 minutes would be spent relearning the code, then 15 minutes to find and identify the issue.
+Of course, it all depends on what the issue is.
 
-*   [ ] Write brief and honest answers to these questions:
-    *   What parts of your program are sloppily written and hard to understand?
-        *   Are there parts of your program which you aren't quite sure how/why they work?
-        *   If a bug is reported in a few months, how long would it take you to find the cause?
-    *   Will your documentation make sense to...
-        *   ...anybody besides yourself?
-        *   ...yourself in six month's time?
-    *   How easy will it be to add a new feature to this program in a year?
-    *   Will your program continue to work after upgrading...
-        *   ...your computer's hardware?
-        *   ...the operating system?
-        *   ...to the next version of Python?
-*   [ ] Make one final commit and push your **completed** Software Development Plan to GitLab.
-*   [ ] Respond to the **Project Reflection Survey** on Canvas.
+I think that adding a new feature should be pretty easy. Since the outline was created before I even started the project and seems pretty sound.
+Most of what I coded was really low level and honestly doesn't really effect the project structure much.
+
+Theoretically it should still run regardless of my computers hardware and operating system. All of the code written only uses python and has nothing to do
+with the hardware or OS. Any langauge update has the potential to break code and since I'm not a developer for Python I couldn't say for sure whether or not
+and update to Python would break this code.
