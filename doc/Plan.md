@@ -93,6 +93,8 @@ The index for the QCEW data in the provided CSV files was not the same as descri
 I wasn't paying close enough attention to realize that the area_titles had to sort out certain unwanted regions.
 I ended up creating a separate method is_valid_fips to excluded unwanted and duplicate FIP areas.
 
+I went back and changed the industry_data.py file to use the methods defined in util.py.
+
 Phase 3: Testing and Debugging (tag name `tested`)
 --------------------------------------------------
 *(30% of your effort)*
