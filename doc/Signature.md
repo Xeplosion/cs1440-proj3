@@ -1,11 +1,7 @@
-# Sprint Signature
-
-*TODO: Remove this notice along with the sample "Nocember" entries*
-
 | Date        | Time Spent | Events
 |-------------|------------|--------------------
-| Nocember 19 | 1 hour     | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-| Nocember 20 | 0.75 hours | Itaque hic ipse iam pridem est reiectus.
+| October 26  | 1.5 hours  | Read through the existing code and completed phaze 0 of development.
+| October 27  | 1.0 hours  | Complete the pseudocode designs of methods in the plan.md document.
 | Nocember 21 | 1.25 hours | Restinguet citius, si ardentem acceperit.
 | Nocember 22 | 2.5 hours  | Quid de Platone aut de Democrito loquar.
 | Nocember 23 | 0.25 hours | Istic sum, inquit. Quae in controversiam veniunt, de iis, si placet, disseramus.
