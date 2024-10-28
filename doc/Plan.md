@@ -80,24 +80,16 @@ Ran python src/big_data.py > test_output.txt then confirmed that the test_output
 Repeated the above step on several other files to ensure consistency.
 Passed all unit tests after running.
 
+Phase 4: Deploying (tag name `deployed`)
 -----------------------------------------
-*(5% of your effort)*
 
-Deliver:
-
-*   [ ] **Tag** the last commit in this phase `deployed` and push it to GitLab.
-*   [ ] Your repository is pushed to GitLab.
-*   [ ] **Verify** that your final commit was received by browsing to its project page on GitLab.
-    *   Ensure the project's URL is correct.
-    *   Look for all of the tags in the **Tags** tab.
-    *   Review the project to ensure that all required files are present and in correct locations.
-    *   Check that unwanted files have not been included.
-    *   Make any final touches to documentation, including the Sprint Signature and this Plan.
-*   [ ] **Validate** that your submission is complete and correct by cloning it to a new location on your computer and re-running it.
-	*	Run your program from the command line so you can see how it will behave when your grader runs it.  **Running it in PyCharm is not good enough!**
-    *   Run through your test cases to avoid nasty surprises.
-    *   Check that your documentation files are all present.
-
+Checked for the correct repository URL.
+Made sure all the tags got pushed to gitlab.
+Project structure is correct and matches that of the existing repository.
+Validated that the correct code was in the gitlab repository.
+Cloned and reran the code to make sure it still worked.
+Ran the project in the command line to test the console output.
+Added final touches to documentation.
 
 Phase 5: Maintenance
 --------------------
