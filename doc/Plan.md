@@ -75,19 +75,10 @@ Filled out the big_data.py file. Was pretty straightforward and all went as plan
 
 Phase 3: Testing and Debugging (tag name `tested`)
 --------------------------------------------------
-*(30% of your effort)*
 
-Your grade depends on how your program performs when run from the command line.  We don't use PyCharm to grade, so ensure your program runs correctly from the shell.
-
-Deliver:
-
-*   [ ] A set of test cases that you have personally run on your computer.
-    *   Write your test cases in plain language such that a non-coder could run them and replicate your experience.
-    *   Include a description of what happened for *each test case*.
-    *   For any bugs discovered, describe their cause and remedy.
-*   [ ] **Tag** the last commit in this phase `tested` and push it to GitLab.
-
-Phase 4: Deployment (tag name `deployed`)
+Ran python src/big_data.py > test_output.txt then confirmed that the test_output.txt file matched the provided output.txt file.
+Repeated the above step on several other files to ensure consistency.
+Passed all unit tests after running.
 
 -----------------------------------------
 *(5% of your effort)*
