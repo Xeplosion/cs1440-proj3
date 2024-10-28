@@ -33,7 +33,7 @@ def record_is_all_industries(record):
     contains information about all industries under all types of
     ownership throughout the entire economy
     """
-    pass
+    return record[2].strip('"') == "10" and record[1].strip('"') == "0"
 
 
 def record_is_software_industry(record):
@@ -41,7 +41,7 @@ def record_is_software_industry(record):
     Predicate that takes a QCEW record and decides whether the record
     contains information about privately owned software publishing firms
     """
-    pass
+    return record[2].strip('"') == "513210" and record[1].strip('"') == "5"
 
 
 def get_fips(record):
