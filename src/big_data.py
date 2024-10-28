@@ -27,42 +27,28 @@ from area_titles import area_titles_to_dict
 from report import Report
 from util import record_matches_fips, record_is_all_industries, record_is_software_industry
 
+if len(sys.argv) < 2:
+    print("Usage: Expected at least one argument but got 0")
+    sys.exit(1)
 
-print("TODO: If sys.argv[1] is not given, print a usage message and exit")  # DELETE ME
-
-print("Reading the databases...", file=sys.stderr)
+print("Reading the databases...")
 before = time.time()
 
-print("TODO: Create a dictionary from 'sys.argv[1]/area-titles.csv'")  # DELETE ME
-print("TODO: If accessing 'sys.argv[1]/area-titles.csv' fails, let your program crash here")  # DELETE ME
-print("TODO: The FIPS dictionary should contain 3,463 pairs")  # DELETE ME
+area_dict = area_titles_to_dict(sys.argv[1])
+if not len(area_dict) == 3463:
+    print("Unexpected dictionary length.", sys.stderr)
 
-print("TODO: Fill in the report using information from 'sys.argv[1]/2022.annual.singlefile.csv'")  # DELETE ME
-
-# This is a demonstration of how to fill IndustryData objects with data
-rpt = Report()
-
-rpt.all.num_areas           = 1337
-rpt.all.total_annual_wages  = 13333337
-rpt.all.max_annual_wages    = ["Trantor", 123456]
-rpt.all.total_estabs        = 42
-rpt.all.max_estabs          = ["Terminus", 12]
-rpt.all.total_emplvl        = 987654
-rpt.all.max_emplvl          = ["Anacreon", 654]
-
-rpt.soft.num_areas          = 1010
-rpt.soft.total_annual_wages = 101001110111
-rpt.soft.max_annual_wages   = ["Helicon", 110010001]
-rpt.soft.total_estabs       = 1110111
-rpt.soft.max_estabs         = ["Solaria", 11000]
-rpt.soft.total_emplvl       = 100010011
-rpt.soft.max_emplvl         = ["Gaia", 10110010]
-
+rpt = Report(year=2023)
+with open(f'{sys.argv[1]}/2023.annual.singlefile.csv', mode='r') as report:
+    for line in report:
+        record = line.split(',')
+        if record_is_all_industries(record):
+            rpt.all.add_record(record, area_dict)
+        elif record_is_software_industry(record):
+            rpt.soft.add_record(record, area_dict)
 
 after = time.time()
 print(f"Done in {after - before:.3f} seconds!", file=sys.stderr)
 
 # Print the completed report
 print(rpt)
-
-print("TODO: Did you delete all of the TODO messages?")  # DELETE ME
