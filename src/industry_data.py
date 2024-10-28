@@ -57,10 +57,13 @@ class IndustryData:
          - Calculates and accumulates the total employment level.
          - Keeps track of the area with the maximum employment level.
         """
+        # Not a valid area
+        if not get_fips(record) in areas:
+            return
+
         # Increment areas processed
         self.num_areas += 1
 
-        # NOTE: Keep the first FIP in the event of a tie
         area = areas[get_fips(record)]
 
         # Wages
