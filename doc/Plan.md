@@ -61,16 +61,6 @@ add_record(self, record, areas):
 
 Phase 2: Implementation (tag name `implemented`)
 ------------------------------------------------
-*(15% of your effort)*
-
-**Finally, you can write code!**
-
-Deliver:
-
-*   [ ] Working code in the `src/` folder.
-*   [ ] Note any relevant and interesting events that happened while you wrote the code.
-    *   e.g. what you learned, what didn't go according to plan.
-*   [ ] **Tag** the last commit in this phase `implemented` and push it to GitLab.
 
 The record parameter for the add_record method was not formatted the way that I expected. I had to cast it to an int.
 The index for the QCEW data in the provided CSV files was not the same as described in the bls.gov website.
@@ -78,6 +68,10 @@ I wasn't paying close enough attention to realize that the area_titles had to so
 I ended up creating a separate method is_valid_fips to excluded unwanted and duplicate FIP areas.
 
 I went back and changed the industry_data.py file to use the methods defined in util.py.
+It was somewhat annoying trying to figure out what ownership and industry codes were the software and all industries in the QWEC records.
+Again these codes did not match the bls.gov website :/
+
+Filled out the big_data.py file. Was pretty straightforward and all went as planned.
 
 Phase 3: Testing and Debugging (tag name `tested`)
 --------------------------------------------------
@@ -92,7 +86,6 @@ Deliver:
     *   Include a description of what happened for *each test case*.
     *   For any bugs discovered, describe their cause and remedy.
 *   [ ] **Tag** the last commit in this phase `tested` and push it to GitLab.
-
 
 Phase 4: Deployment (tag name `deployed`)
 
