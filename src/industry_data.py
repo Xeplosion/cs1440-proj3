@@ -61,27 +61,22 @@ class IndustryData:
         self.num_areas += 1
 
         # NOTE: Keep the first FIP in the event of a tie
-        area_fip = record[0].strip('"')
+        area = areas[get_fips(record)]
 
         # Wages
         total_wages = int(float(record[10]))
         self.total_annual_wages += total_wages
         if total_wages > self.max_annual_wages[1]:
-            self.max_annual_wages[0] = areas[area_fip]
-            self.max_annual_wages[1] = total_wages
+            self.max_annual_wages = [area, total_wages]
 
         # Establishments
-        total_estabs = int(float(record[8]))
+        total_estabs = get_estabs(record)
         self.total_estabs += total_estabs
         if total_estabs > self.max_estabs[1]:
-            self.max_estabs[0] = areas[area_fip]
-            self.max_estabs[1] = total_estabs
+            self.max_estabs = [area, total_estabs]
 
         # Employment levels
-        total_emplvl = int(float(record[9]))
+        total_emplvl = get_emplvl(record)
         self.total_emplvl += total_emplvl
         if total_emplvl > self.max_emplvl[1]:
-            self.max_emplvl[0] = areas[area_fip]
-            self.max_emplvl[1] = total_emplvl
-
-        pass
+            self.max_emplvl = [area, total_emplvl]

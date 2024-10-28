@@ -24,7 +24,7 @@ def record_matches_fips(record, areas):
     decides whether the record contains information about a FIPS area in
     the dictionary
     """
-    pass
+    return get_fips(record) in areas
 
 
 def record_is_all_industries(record):
@@ -48,7 +48,7 @@ def get_fips(record):
     """
     Extracts a FIPS area code from a QCEW record
     """
-    pass
+    return record[0].strip('"')
 
 
 def get_estabs(record):
@@ -56,7 +56,7 @@ def get_estabs(record):
     Extracts the annual average of quarterly establishment counts for a
     given year from a QCEW record
     """
-    pass
+    return int(float(record[8]))
 
 
 def get_emplvl(record):
@@ -64,7 +64,7 @@ def get_emplvl(record):
     Extracts the annual average of monthly employment levels for a given
     year from a QCEW record
     """
-    pass
+    return int(float(record[9]))
 
 
 def get_wages(record):
@@ -72,4 +72,4 @@ def get_wages(record):
     Extracts the sum of the four quarterly total wage levels for a given
     year from a QCEW record
     """
-    pass
+    return int(float(record[10]))
