@@ -88,6 +88,10 @@ Deliver:
     *   e.g. what you learned, what didn't go according to plan.
 *   [ ] **Tag** the last commit in this phase `implemented` and push it to GitLab.
 
+The record parameter for the add_record method was not formatted the way that I expected. I had to cast it to an int.
+The index for the QCEW data in the provided CSV files was not the same as described in the bls.gov website.
+I wasn't paying close enough attention to realize that the area_titles had to sort out certain unwanted regions.
+I ended up creating a separate method is_valid_fips to excluded unwanted and duplicate FIP areas.
 
 Phase 3: Testing and Debugging (tag name `tested`)
 --------------------------------------------------
@@ -105,6 +109,7 @@ Deliver:
 
 
 Phase 4: Deployment (tag name `deployed`)
+
 -----------------------------------------
 *(5% of your effort)*
 
