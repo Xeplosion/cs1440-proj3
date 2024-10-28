@@ -32,11 +32,11 @@ Deliver:
 *   [ ] **Tag** the last commit in this phase `designed` and push it to GitLab.
     *   *Grace Points: if this tag is pushed before 11:59 PM on the Monday before the due date, you will receive up to 5 points back*
 
+### util.py
+
 record_matches_fips(record, areas):
-    for areas
-        if fip index of record equals areas index
-            return True
-    return False
+    fip = record index of fip
+    return areas contains fip
 
 record_is_all_industries(record):
     extract industry and ownership codes from record
@@ -58,6 +58,22 @@ get_wages(record):
     get the index for all 4 quarters wages
     returns the sum of these 4 numbers
     
+### area_titles.py
+
+area_titles_to_dict(dirname)
+    load dirname + area-title.csv
+    for each line in area-title add new dictionary fip / name key pair
+
+### industry_data.py
+
+__init__():
+    initialize the necessary values in the constructor.
+
+add_record(self, record, areas):
+    increment processed areas
+    find annual wages, establishments, and employment levels for the current record
+    if any of these are larger (and not equal) to the existing maximums replace that data
+
 
 Phase 2: Implementation (tag name `implemented`)
 ------------------------------------------------
