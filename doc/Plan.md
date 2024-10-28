@@ -15,22 +15,6 @@ The programs output should be printed in the console using STDOUT. The output sh
 
 Phase 1: Design (tag name `designed`)
 -------------------------------------
-*(30% of your effort)*
-
-**Important - do not change the starter code in this phase.**  Feel free to write prototype files and experiment in the REPL, but it's too early to work on the starter code now.
-
-Deliver:
-
-*   [ ] Pseudocode that captures how each function works in plain language.
-    *   Pseudocode != Python.  Do not paste your finished source code into this part of the plan.
-    *   Describe important functions and classes in your program.  Include such details as:
-        *   Names of functions/classes
-        *   Parameter names and their types
-        *   Types of data returned by functions
-*   [ ] Explain what happens in the face of good and bad input.
-    *   As you think of specific examples, write them under **Phase 3** so you can run them as soon as the program is functional.
-*   [ ] **Tag** the last commit in this phase `designed` and push it to GitLab.
-    *   *Grace Points: if this tag is pushed before 11:59 PM on the Monday before the due date, you will receive up to 5 points back*
 
 ### util.py
 
